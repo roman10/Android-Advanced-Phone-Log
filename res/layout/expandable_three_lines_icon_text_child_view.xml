@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/expandable_three_lines_icon_text_child_view_left_icon"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        
+         />
+    
+       	
+    <TextView  
+        android:id="@+id/expandable_three_lines_icon_text_child_view_line_under_left_icon"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+        
+        android:paddingLeft="5dip"
+        
+        android:layout_below="@id/expandable_three_lines_icon_text_child_view_left_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+	     />
+	<View android:id="@+id/filler_left"
+	 	android:layout_height="fill_parent"
+	 	android:layout_width="7dip"
+	 	android:layout_toRightOf="@id/expandable_three_lines_icon_text_child_view_left_icon"
+	 	/>
+	<ImageView android:id="@+id/divider_left"
+          android:layout_width="2dip"
+          android:layout_height="wrap_content"        
+          
+          android:layout_alignParentTop="true"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@id/filler_left"
+          
+          android:background="@color/solid_red">
+    </ImageView>
+    <ImageButton 
+    	android:id="@+id/expandable_three_lines_icon_text_child_view_right_icon" 
+		
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		/>
+	<TextView  
+        android:id="@+id/expandable_three_lines_icon_text_child_view_line_under_right_icon"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+        android:paddingRight="12dip"
+        
+        android:layout_below="@id/expandable_three_lines_icon_text_child_view_right_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+	 />
+	 <View android:id="@+id/filler"
+	 	android:layout_height="fill_parent"
+	 	android:layout_width="7dip"
+	 	android:layout_toLeftOf="@id/expandable_three_lines_icon_text_child_view_right_icon"
+	 	>
+	 </View>
+	 <ImageView android:id="@+id/divider"
+          android:layout_width="1dip"
+          android:layout_height="wrap_content"
+          
+          
+          android:layout_alignTop="@id/expandable_three_lines_icon_text_child_view_right_icon"
+          android:layout_alignBottom="@id/expandable_three_lines_icon_text_child_view_line_under_right_icon"
+          
+          android:layout_toLeftOf="@id/filler"
+          
+          android:background="@color/custom_gray">
+    </ImageView>
+    
+	<TextView
+	    android:id="@+id/expandable_three_lines_icon_text_child_view_line1_text1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	
+	    
+	    android:layout_toRightOf="@id/divider_left"
+	    android:layout_alignParentTop="true"
+	    
+	    android:singleLine="true"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+	    android:id="@+id/expandable_three_lines_icon_text_child_view_line1_text2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"	
+	    
+	    android:paddingLeft="30dip"	    
+	    
+	    android:layout_toRightOf="@id/expandable_three_lines_icon_text_child_view_line1_text1"
+	    android:layout_alignParentTop="true"
+	    
+	    android:singleLine="true"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+    	android:id="@+id/expandable_three_lines_icon_text_child_view_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@id/divider_left"
+        android:layout_below="@id/expandable_three_lines_icon_text_child_view_line1_text1"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+                
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical" />
+
+	 <TextView
+    	android:id="@+id/expandable_three_lines_icon_text_child_view_line3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@id/divider_left"
+        android:layout_below="@id/expandable_three_lines_icon_text_child_view_line2"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+                
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        />
+    
+</RelativeLayout>

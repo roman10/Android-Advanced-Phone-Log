@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout android:id="@+id/RelativeLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		
+		<TextView 
+			  android:id="@+id/apl_main_total_text" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  
+			  android:textAppearance="?android:attr/textAppearanceSmall"
+			  
+			  android:layout_alignParentTop="true"
+			  android:gravity="center_horizontal"
+		   /> 
+		
+		
+		<TableLayout android:id="@+id/apl_main_multi_buttons" 
+   			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"	
+			android:layout_alignParentBottom="true">
+			<TableRow
+				android:gravity="center">
+				<Button android:id="@+id/apl_main_multi_btn_first" 
+				  	android:text="Comm"
+				  	style="@style/ButtonStripMiddle"
+				  	android:textStyle="bold"
+					android:layout_weight="1"
+					android:gravity="center"
+					/>	
+				<Button android:id="@+id/apl_main_multi_btn_second" 
+				  	android:text="Sort"
+				  	style="@style/ButtonStripMiddle"
+				  	android:textStyle="bold"
+					android:layout_weight="1"
+					android:gravity="center"
+					/>	
+				<Button android:id="@+id/apl_main_multi_btn_third" 
+				  	android:text="Filter"
+				  	style="@style/ButtonStripMiddle"
+				  	android:textStyle="bold"
+					android:layout_weight="1"
+					android:gravity="center"
+					/>
+				<Button android:id="@+id/apl_main_multi_btn_forth" 
+				  	android:text="More"
+				  	style="@style/ButtonStripMiddle"
+				  	android:textStyle="bold"
+					android:layout_weight="1"
+					android:gravity="center"
+					/>
+		  	</TableRow>
+		</TableLayout>
+   
+	    <ExpandableListView android:id="@android:id/list"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        
+	        android:drawSelectorOnTop="true"
+	        android:clickable="true"
+	        
+	        android:layout_centerInParent="true"
+	        android:layout_below="@id/apl_main_total_text"
+	        android:layout_above="@id/apl_main_multi_buttons"
+	        /> 
+	    <TextView 
+			  android:id="@+id/apl_main_empty_text" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  
+			  android:textAppearance="?android:attr/textAppearanceLarge"
+			  
+			  android:gravity="center_horizontal"
+			  android:layout_gravity="center_vertical"
+			  
+			  android:visibility="gone"
+			  
+			  android:layout_centerInParent="true"
+	          android:layout_below="@id/apl_main_total_text"
+	          android:layout_above="@id/apl_main_multi_buttons"
+		   />
+	</RelativeLayout>
+	
+</LinearLayout>

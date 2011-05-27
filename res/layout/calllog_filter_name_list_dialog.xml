@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  	 <RelativeLayout android:id="@+id/RelativeLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		
+		<TableLayout android:id="@+id/calllog_filter_name_list_multi_buttons" 
+   			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"	
+			android:layout_alignParentBottom="true">
+			<TableRow
+				android:gravity="center">
+				<Button android:id="@+id/calllog_filter_name_list_multi_btn_first" 
+				  	android:text="All"
+				  	android:textStyle="bold"
+					/>	
+				<Button android:id="@+id/calllog_filter_name_list_multi_btn_second" 
+				  	android:text="Ok"
+				  	android:textStyle="bold"
+					/>	
+				<Button android:id="@+id/calllog_filter_name_list_multi_btn_third" 
+				  	android:text="Cancel"
+				  	android:textStyle="bold"
+					/>	
+				<Button android:id="@+id/calllog_filter_name_list_multi_btn_forth" 
+				  	android:text="None"
+				  	android:textStyle="bold"
+					/>	
+		  	</TableRow>
+		</TableLayout>
+   
+	    <ListView android:id="@android:id/list"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:drawSelectorOnTop="true"
+	        android:clickable="true"
+	        android:layout_centerInParent="true"
+	        android:layout_above="@id/calllog_filter_name_list_multi_buttons"
+	        /> 
+	     
+	</RelativeLayout>
+</LinearLayout>

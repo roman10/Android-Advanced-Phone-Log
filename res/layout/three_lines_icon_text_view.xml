@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:padding="6dip">
+    
+    <ImageView
+        android:id="@+id/three_lines_icon_text_view_icon"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentTop="true"
+        
+        
+        android:src="@drawable/icon" />
+    <TextView  
+        android:id="@+id/three_lines_icon_text_view_line_under_icon"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        
+        android:layout_below="@id/three_lines_icon_text_view_icon"
+        android:layout_alignParentBottom="true"
+        
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+	     />
+
+	<LinearLayout 
+		android:id="@+id/three_lines_icon_text_view_lines"
+		android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        
+        android:layout_toRightOf="@id/three_lines_icon_text_view_icon"
+	    android:layout_alignParentRight="true"
+        >
+	    <TextView  
+	        android:id="@+id/three_lines_icon_text_view_line1"
+	
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:gravity="center_vertical"
+	     />
+	     
+	     <TextView
+	    	android:id="@+id/three_lines_icon_text_view_line2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	                
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:gravity="center_vertical" />
+	
+		 <TextView
+	    	android:id="@+id/three_lines_icon_text_view_line3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	                
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:gravity="center_vertical"
+	        />
+        
+    </LinearLayout>
+
+</RelativeLayout>
